@@ -1,0 +1,19 @@
+
+
+<ul>
+{{# pages.paginator }}
+  <li><a href="{{ url }}">{{ title }}</a></li>
+{{/ pages.paginator }}
+</ul>
+
+<h2>Navigation</h2>
+<ul>
+{{#pages.paginator_navigation}}
+  {{#is_active_page}}
+    <li class="active"><a href="{{url}}">{{name}}</a></li>
+  {{/is_active_page}}
+  {{^is_active_page}}
+    <li><a href="{{url}}">{{name}}</a></li>
+  {{/is_active_page}}
+{{/pages.paginator_navigation}}
+</ul>

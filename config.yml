@@ -1,0 +1,5 @@
+pages:
+  paginator:
+    enable: true
+    per_page: 3
+    url: "/hai/index/"
